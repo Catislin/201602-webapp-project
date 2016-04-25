@@ -8,7 +8,13 @@
     <script src="/js/main.js"></script>
 </head>
 <body>
+
     <img src="/images/oxy-seal.png" style="width:150px; height:150px;">
     My Course Counts
+
+    {% for Class in classes %}
+    <p>Units: {{ Class.units }}</p>
+    {% endfor %}
+
 </body>
 </html>
